@@ -23,5 +23,9 @@ Accounting:
 Note:
 - It is presumed that Internet users would be authenticated/authorized by an OAuth system ...
 
+Unkowns:
+- many :)
+- how would middleware be used in a global AAA that is required for all models
+
 Play:
 - At the moment, I have placed moved some  view specific things to boot/views.js
