@@ -6,7 +6,7 @@
  */
  
  // I still need to check what app.looback.token is doing and if it works in this context
-  module.exports = function(app){
+  module.exports = function enableAuthentication(app){ // or function(app) ...???
    // any requirements on order of these two?
    app.enableAuth(); // http://apidocs.strongloop.com/loopback/#app-enableauth : very terse API comment, any doc?
    app.use(app.loopback.token({ model: app.models.accessToken })); // http://apidocs.strongloop.com/loopback/#loopback-token
