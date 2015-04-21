@@ -5,9 +5,11 @@
  * http://docs.strongloop.com/display/public/LB/Working+with+LoopBack+objects#WorkingwithLoopBackobjects-Fromabootscript
  */
  
+ // I still need to check what app.looback.token is doing and if it works in this context
   module.exports = function(app){
-   app.enableAuth();
-   app.use(app.loopback.token({ model: app.models.accessToken }));
+   // any requirements on order of these two?
+   app.enableAuth(); // http://apidocs.strongloop.com/loopback/#app-enableauth : very terse API comment, any doc?
+   app.use(app.loopback.token({ model: app.models.accessToken })); // http://apidocs.strongloop.com/loopback/#loopback-token
  }
  
 /*
