@@ -7,12 +7,13 @@
  /*
 * - where does server come from, can only find ref to app in boot
 * - can one get server from app and change to:
-* module.exports = funcion(app){
-*   app.something.server.enableAuth();
-*   app.use(loopback.token({ model: app.models.accessToken }));
-* }
 */
-module.exports = function enableAuthentication(server) { 
-  // enable authentication
+/*  module.exports = function(app){
+   app.server.enableAuth();
+   app.use(loopback.token({ model: app.models.accessToken }));
+ }
+ */
+
+ module.exports = function enableAuthentication(server) { 
   server.enableAuth();
 };
