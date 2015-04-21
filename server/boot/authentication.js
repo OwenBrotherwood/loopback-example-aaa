@@ -4,16 +4,18 @@
  * http://docs.strongloop.com/display/public/LB/Working+with+LoopBack+objects
  * http://docs.strongloop.com/display/public/LB/Working+with+LoopBack+objects#WorkingwithLoopBackobjects-Fromabootscript
  */
- /*
-* - where does server come from, can only find ref to app in boot
-* - can one get server from app and change to:
-*/
-/*  module.exports = function(app){
-   app.server.enableAuth();
-   app.use(loopback.token({ model: app.models.accessToken }));
+ 
+  module.exports = function(app){
+   app.enableAuth();
+   app.use(app.loopback.token({ model: app.models.accessToken }));
  }
- */
-
- module.exports = function enableAuthentication(server) { 
-  server.enableAuth();
+ 
+/*
+* - where does server come from, can only find ref to app in boot
+* - finally, I guessed server === app and loopback could be ref from app
+*/
+ /*
+ module.exports = function enableAuthentication(app) { 
+  app.enableAuth();
 };
+*/
