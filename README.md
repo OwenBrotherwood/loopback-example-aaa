@@ -29,3 +29,8 @@ Unkowns:
 
 Play:
 - At the moment, I have placed moved some  view specific things to boot/views.js
+- Cookies and tokens : http://docs.strongloop.com/display/public/LB/Making+authenticated+requests
+
+General Doc:
+- http://docs.strongloop.com/display/public/LB/Authentication%2C+authorization%2C+and+permissions
+
