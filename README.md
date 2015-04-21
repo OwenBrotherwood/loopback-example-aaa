@@ -23,3 +23,5 @@ Accounting:
 Note:
 - It is presumed that Internet users would be authenticated/authorized by an OAuth system ...
 
+Play:
+- At the moment, I have placed moved some  view specific things to boot/views.js

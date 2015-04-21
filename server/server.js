@@ -3,10 +3,8 @@ var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
 
-// needed for middleware
+// needed for middleware: I would love to not have these 2 lines in server.js
 var bodyParser = require('body-parser');
-
-// why "here"?
 app.middleware('initial', bodyParser.urlencoded({ extended: true }));
 
 app.start = function() {

@@ -1,3 +1,7 @@
+/*
+ * Attempt at not having this in server.js
+ * But is this something middleware.js should be doing?
+ */
 module.exports = function(app){
   var path = require('path');
 
