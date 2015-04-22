@@ -4,12 +4,16 @@
  * http://docs.strongloop.com/display/public/LB/Working+with+LoopBack+objects
  * http://docs.strongloop.com/display/public/LB/Working+with+LoopBack+objects#WorkingwithLoopBackobjects-Fromabootscript
  */
+
+/*
+ * try to force use of cookies instead of tokens as this could be a good place for it
+ */
  
  // I still need to check what app.looback.token is doing and if it works in this context
   module.exports = function enableAuthentication(app){ // or function(app) ...???
    // any requirements on order of these two?
-   app.enableAuth(); // http://apidocs.strongloop.com/loopback/#app-enableauth : very terse API comment, any doc?
    app.use(app.loopback.token({ model: app.models.accessToken })); // http://apidocs.strongloop.com/loopback/#loopback-token
+   app.enableAuth(); // http://apidocs.strongloop.com/loopback/#app-enableauth : very terse API comment, any doc?
  }
  
 /*

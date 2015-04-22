@@ -16,6 +16,7 @@ Authentication:
 
 Authorization:
 - Roles from LDAP groups
+- Pierres hint: Investigate Dynamic Roles 
 
 Accounting:
 - Log changes to models and make available to a Role
@@ -29,8 +30,9 @@ Unkowns:
 
 Play:
 - At the moment, I have placed moved some  view specific things to boot/views.js
-- Cookies and tokens : http://docs.strongloop.com/display/public/LB/Making+authenticated+requests
+- Is it possible to define if Cookies and tokens are used in boot/authentication.js: http://docs.strongloop.com/display/public/LB/Making+authenticated+requests
 
 General Doc:
 - http://docs.strongloop.com/display/public/LB/Authentication%2C+authorization%2C+and+permissions
+- http://docs.strongloop.com/display/public/LB/Defining+and+using+roles#Definingandusingroles-Dynamicroles
 
