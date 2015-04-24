@@ -6,7 +6,7 @@
  */
 
 /*
- * try to force use of cookies instead of tokens as this could be a good place for it
+ * try to reject token in cookies or url as this could be a good place for it
  */
  
  // I still need to check what app.looback.token is doing and if it works in this context
