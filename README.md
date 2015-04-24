@@ -2,7 +2,7 @@
 # loopback-example-aaa
 
 - A combination of loopback-example-access-control and loopback-example-passport
-- Focus on LDAP (MS AD) integration for the non-internet use case
+- Focus on MS ADFS / LDAP (MS AD) integration for the non-internet use case
 
 WARNING: The package.json contains a forked loopback-component-passport
 
@@ -13,6 +13,7 @@ Use Case:
 Authentication:
 - Authenticate users via LDAP
 - Only one User as Local: user of last resort for diagnostics if at all needed
+- token in header contra url/cookie
 
 Authorization:
 - Roles from LDAP groups
