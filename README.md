@@ -36,4 +36,5 @@ Play:
 General Doc:
 - http://docs.strongloop.com/display/public/LB/Authentication%2C+authorization%2C+and+permissions
 - http://docs.strongloop.com/display/public/LB/Defining+and+using+roles#Definingandusingroles-Dynamicroles
+- http://apidocs.strongloop.com/loopback/#loopback-token
 
