@@ -4,8 +4,6 @@
 - A combination of loopback-example-access-control and loopback-example-passport
 - Focus on MS ADFS / LDAP (MS AD) integration for the non-internet use case
 
-WARNING: The package.json contains a forked loopback-component-passport
-
 Use Case:
 - use of boot directory for global AAA as starting point
 - model AAA or ACL when understood
