@@ -12,9 +12,10 @@ Authentication:
 - Authenticate users via LDAP
 - Only one User as Local: user of last resort for diagnostics if at all needed
 - token in header contra url/cookie
+- expose group membership
 
 Authorization:
-- Roles from LDAP groups
+- Roles mapping to LDAP groups (membership at authentication time)
 - Pierres hint: Investigate Dynamic Roles 
 
 Accounting:
@@ -36,3 +37,4 @@ General Doc:
 - http://docs.strongloop.com/display/public/LB/Defining+and+using+roles#Definingandusingroles-Dynamicroles
 - http://apidocs.strongloop.com/loopback/#loopback-token
 - http://docs.strongloop.com/display/public/LB/Making+authenticated+requests
+- https://github.com/strongloop/loopback/blob/1cabd74308e8c57aa8033641c77bccfcf86e57f3/common/models/user.js#L196-L203
