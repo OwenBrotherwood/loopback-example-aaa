@@ -10,7 +10,7 @@
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "errorhandler": "^1.1.1",
-    "loopback": "^2.14.0",
+    "loopback": "git://github.com/OwenBrotherwood/loopback#access-token",
     "loopback-boot": "^2.6.5",
     "loopback-component-passport": "^1.0.5",
     "loopback-datasource-juggler": "^2.19.0",
