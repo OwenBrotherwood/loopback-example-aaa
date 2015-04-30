@@ -11,6 +11,7 @@ var bodyParser = require('body-parser');
 app.middleware('initial', bodyParser.urlencoded({ extended: true })); // http://apidocs.strongloop.com/loopback/#app-middleware
 
 app.use(app.loopback.token({ model: app.models.accessToken, headers: ['X-Access-Token', 'authorization'], noConcat: true }));
+app.use('/api', loopback.rest());
 
 app.start = function() {
   return app.listen(function() { // http://apidocs.strongloop.com/loopback/#app-listen
