@@ -10,7 +10,7 @@ var boot = require('loopback-boot'); // http://apidocs.strongloop.com/loopback-b
 var bodyParser = require('body-parser');
 app.middleware('initial', bodyParser.urlencoded({ extended: true })); // http://apidocs.strongloop.com/loopback/#app-middleware
 
-app.use(app.loopback.token({ model: app.models.accessToken }));
+// app.use(app.loopback.token({ model: app.models.accessToken }));
 
 app.start = function() {
   return app.listen(function() { // http://apidocs.strongloop.com/loopback/#app-listen
